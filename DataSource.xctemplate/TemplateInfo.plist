@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>A Network DataSource.</string>
+	<key>Summary</key>
+	<string>A Network DataSource.</string>
+	<key>SortOrder</key>
+	<string>2</string>
+	<key>DefaultCompletionName</key>
+	<string>DataSource</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>dataSourceName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Class:</string>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>dataSourceSubclass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Subclass of:</string>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Values</key>
+			<array>
+				<string>DataSource</string>
+				<string>ArrayDataSource</string>
+			</array>
+			<key>MainTemplateFiles</key>
+			<dict>
+				<key>DataSource</key>
+				<string>___FILEBASENAME___.swift</string>
+				<key>ArrayDataSource</key>
+				<string>___FILEBASENAME___.swift</string>
+			</dict>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>DataSource</string>
+		</dict>
+	</array>
+</dict>
+</plist>
